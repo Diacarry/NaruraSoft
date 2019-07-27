@@ -1,1 +1,9 @@
-<p>partner-list-page works!</p>
+<button class="btn btn-danger" routerLink="/index">Menú Principal</button>
+<p>LISTADO DE PAREJAS ASOCIADAS</p>
+<div class="row">
+  <div class="col-12">
+    <ul class="list-group list-group-flush" *ngFor="let partner of ListPartner">
+      <li class="list-group-item">{{ partner.he }} emparejado con {{ partner.she }} -> <small><a href="">eliminar</a></small></li>
+    </ul>
+  </div>
+</div>

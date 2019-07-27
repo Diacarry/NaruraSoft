@@ -10,6 +10,7 @@ import { IndexPageComponent } from './Pages/index-page/index-page.component';
 import { RegisterPageComponent } from './Pages/register-page/register-page.component';
 import { RegisterListPageComponent } from './Pages/register-list-page/register-list-page.component';
 import { PartnerListPageComponent } from './Pages/partner-list-page/partner-list-page.component';
+
 import { RegisterFormComponent } from './Components/Forms/register-form/register-form.component';
 import { PeopleTableComponent } from './Components/Tables/people-table/people-table.component';
 import { PartnerTableComponent } from './Components/Tables/partner-table/partner-table.component';

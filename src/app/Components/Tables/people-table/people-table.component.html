@@ -1,1 +1,11 @@
-<p>people-table works!</p>
+<div class="col-6">LISTADO DE MUJERES
+        <ul class="list-group" *ngFor="let women of ListWomen">
+          <li class="list-group-item">{{ women }}</li>
+        </ul>
+      </div>
+    
+      <div class="col-6">LISTADO HOMBRES
+        <ul class="list-group" *ngFor="let men of ListMen">
+          <li class="list-group-item">{{ men }}</li>
+        </ul>
+      </div>

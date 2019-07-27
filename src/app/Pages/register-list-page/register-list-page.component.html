@@ -1,1 +1,37 @@
-<p>register-list-page works!</p>
+<button class="btn btn-danger" routerLink="/index">Menú Principal</button>
+<p>En esta opcion se mostra el listado de hombres y mujeres registrados</p>
+
+<div class="row">
+  <div class="col-6">LISTADO DE MUJERES
+    <ul class="list-group" *ngFor="let women of ListWomen">
+      <li class="list-group-item">{{ women }}</li>
+    </ul>
+  </div>
+
+  <div class="col-6">LISTADO HOMBRES
+    <ul class="list-group" *ngFor="let men of ListMen">
+      <li class="list-group-item">{{ men }}</li>
+    </ul>
+  </div>
+  <!--<app-people-table></app-people-table>-->
+</div><br><br>
+<form>
+<div class="row">
+  <div class="col-6">LISTADO DE MUJERES
+    <div class="form-group">
+      <select class="form-control" id="selectA">
+          <option value="">Elija una opción</option>
+        <ng-container *ngFor="let women of ListWomen">
+          <option value="{{ women }}">{{ women }}</option>
+        </ng-container>
+      </select>
+    </div>
+  </div>
+  <div class="col-6">PAREJA SELECCIONADA
+    <div class="form-group">
+      <input class="form-control" placeholder="Ubicar pareja con codigo" required>
+    </div>
+  </div>
+</div>
+<button type="" class="btn btn-primary">GUARDAR ASIGNACION</button>
+</form>
